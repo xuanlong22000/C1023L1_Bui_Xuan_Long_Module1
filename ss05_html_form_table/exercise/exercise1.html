@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise1</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .form1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form1 .form1_main {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form1 h3 {
+            width: 100%;
+            text-align: center;
+            background: orange;
+        }
+
+        .form1 .form1_main_head {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form1 .btn {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .form1 .btn button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form 1</h1>
+
+    <form action="">
+
+        <h3 style="background-color: orange;">So thich cua ban</h3>
+
+        <table style="width: 100%;">
+            <tr>
+                <td align="end">
+                    <label for="name">Ho va ten</label>
+                </td>
+
+                <td>
+                    <input type="text" id="name" name="name"><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="end">
+                    <label for="email">Email</label>
+
+                </td>
+                <td>
+                    <input type="text" id="email" name="email">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="end">
+                    <label>So thich</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="sport" name="sport">
+                    <label for="sport">The thao</label>
+                    <input type="checkbox" id="music" name="music">
+                    <label for="music">Am nhac</label>
+                    <input type="checkbox" id="reading" name="reading">
+                    <label for="reading">Doc sach</label>
+                    <input type="checkbox" id="web" name="web">
+                    <label for="web">Luot web</label>
+                    <input type="checkbox" id="game" name="game">
+                    <label for="game">Choi game</label>
+                    <input type="checkbox" id="movie" name="movie">
+                    <label for="movie">Dien anh</label>
+                    <input type="checkbox" id="travel" name="travel">
+                    <label for="travel">Du lich</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <button style="padding: 5px;" type="submit">Gui thong tin</button>
+                    <button style="padding: 5px;" type="reset">Nhap lai</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h1>Form 2</h1>
+
+    <form action="">
+        <h3 style="background-color:aqua;">Dang Ki Hoc Vien</h3>
+        <table style="background-color:yellow ;width: 100%;">
+            <tr>
+                <td>
+                    <label for="nameForm2">Name</label>
+                </td>
+                <td>
+                    <input type="text" id="nameForm2" name="nameForm2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Day of birth</label>
+                </td>
+                <td>
+                    <input type="text" id="dob" name="dob">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Gender</label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender" />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" />
+                    <label for="female">female</label>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="address">Address</label>
+                </td>
+                <td>
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="class">Class</label>
+                </td>
+                <td>
+                    <select name="class">
+                        <option value="class1">Select</option>
+                        <option value="class2">Class 1</option>
+                        <option value="class3">Class 3</option>
+
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="emailForm2">Email</label>
+                </td>
+                <td>
+                    <input type="text" id="emailForm2" name="emailForm2">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="phone">Phone</label>
+                </td>
+                <td>
+                    <input type="text" id="phone" name="phone">
+                </td>
+            </tr>
+            <tr>
+
+                <td></td>
+
+                <td>
+                    <button style="padding: 5px;" type="submit">Submit</button>
+                    <button style="padding: 5px;" type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
