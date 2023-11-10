@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise2</title>
+
+    <style>
+        td {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+
+        <table cellspacing="10" cellpadding="30" style="text-align: center;" class="keyboard" border="1">
+
+            <caption class="result" style="font-size: 50px;">0</caption>
+
+            <tr>
+                <td onclick="processOperator(1)">1</td>
+                <td onclick="processOperator(2)">2</td>
+                <td onclick="processOperator(3)">3</td>
+                <td onclick="processOperator('+')">+</td>
+            </tr>
+
+            <tr>
+                <td onclick="processOperator(4)">4</td>
+                <td onclick="processOperator(5)">5</td>
+                <td onclick="processOperator(6)">6</td>
+                <td onclick="processOperator('-')">-</td>
+            </tr>
+
+            <tr>
+                <td onclick="processOperator(7)">7</td>
+                <td onclick="processOperator(8)">8</td>
+                <td onclick="processOperator(9)">9</td>
+                <td onclick="processOperator('*')">x</td>
+            </tr>
+
+            <tr>
+                <td onclick="processOperator('.')">.</td>
+                <td onclick="processOperator(0)">0</td>
+                <td onclick="clearCalculator()">AC</td>
+                <td onclick="processOperator('/')">%</td>
+            </tr>
+
+            <tr>
+                <td onclick="processOperator('(')">(</td>
+                <td onclick="processOperator(')')">)</td>
+                <td colspan="2" onclick="calculatorResult()">=</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script src="exercise2.js"></script>
+
+</html>
