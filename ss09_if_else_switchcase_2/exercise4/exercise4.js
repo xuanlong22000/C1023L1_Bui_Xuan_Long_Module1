@@ -1,0 +1,11 @@
+let sidea = document.querySelector('#sidea')
+
+let sideb = document.querySelector('#sideb')
+
+let btn = document.querySelector('.btn')
+
+let result = document.querySelector('.result')
+
+btn.addEventListener('click', () => {
+    result.innerHTML = `The area of rectangle is ${+sidea.value * +sideb.value}`
+})
